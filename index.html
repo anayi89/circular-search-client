@@ -4,10 +4,23 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>Circular Search</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      /* Open when someone clicks on the span element */
+      function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+          document.getElementsByClassName("fa-solid fa-bars")[0].style.display = "none";
+      }
+        
+      /* Close when someone clicks on the "x" symbol inside the overlay */
+      function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+          document.getElementsByClassName("fa-solid fa-bars")[0].style.display = "inline-block";
+      }
+    </script>
   </body>
 </html>
