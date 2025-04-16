@@ -1,0 +1,51 @@
+:root {
+    --dark-cyan: rgb(8,86,48);
+    --dark-cyan-opaque: rgba(8,86,48, 0.8);
+  }
+
+.nav_menu {
+    position: relative;
+    background-color: var(--dark-cyan);
+    padding: 1rem;
+    color: white;
+}
+
+.hamburger {
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    background-color: white;
+}
+
+.overlay {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+.overlay.open {
+    width: 100%;
+}
+
+.overlay-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: white;
+    cursor: pointer;
+}
