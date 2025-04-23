@@ -97,10 +97,13 @@ input[name=search] {
   cursor: pointer;
 }
 
-.fa-search {
+.fa-magnifying-glass {
   background: var(--current-green);
 }
 
+.fa-bars {
+  
+}
 form.example button:hover {
   background: #0b7dda;
 }
