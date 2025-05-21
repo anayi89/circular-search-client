@@ -1,5 +1,6 @@
 import './App.css'
 import NavBar from './shared/NavBar'
+import Footer from './shared/Footer'
 import Home from './components/Home'
 import Search from './components/Search'
 import Upload from './components/Upload'
@@ -22,6 +23,7 @@ function App() {
         <Route path="/contact_us" element={<Contact/>} />
         <Route path='/sign_up_login' element={<Authenticate/>} />
       </Routes>
+      <Footer />
     </>
   )
 }
