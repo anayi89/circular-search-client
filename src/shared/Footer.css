@@ -56,6 +56,7 @@
     color: var(--white);
 }
 
+/* ":hover" pseudo class selector (Lecture 1.2, P1) */
 #footerSection div ul li a:hover, .fa-facebook:hover, .fa-linkedin:hover, .fa-instagram:hover {
     color: var(--jolly-green);
 }

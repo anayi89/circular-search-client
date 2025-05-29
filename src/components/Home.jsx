@@ -1,30 +1,19 @@
+// external stylesheets (Lecture 3.4, P1)
 import "../styles/HomeHero.css"
 import "../styles/HomeFeatures.css"
-import "../styles/HomeUploadChecklist.css"
-import "../styles/HomeUploadMockup.css"
 import "../styles/HomeSearchChecklist.css"
 import "../styles/HomeSearchMockup.css"
-import "../styles/HomePricing.css"
-import { Search, ArrowUp, ArrowDown } from "lucide-react"
+import "../styles/Home.css"
 import features from "../data/features"
 import plans from "../data/plans"
+
+// component imports (Lecture 3.1, P3)
 import dummyTextStrings from "../data/dummyTextStrings"
 import uploadChecklist from "../data/uploadChecklist"
 import searchChecklist from "../data/searchChecklist"
 import { Link } from "react-router-dom"
 import { useState } from "react"
 
-/*
-Personal Project Requirements
-(Lecture 1.2, P1)
-"div", "span", "p" and "h" ("h1", "h2", "h3") elements
-":hover" pseudo class selector
-external stylesheets
-height and weight properties
-box model (margin, border, padding)
-
-(Lecture 1.2, P2)
-*/
 function Home() {
     const dummyText = (n) => {
         let result = ''
@@ -37,6 +26,7 @@ function Home() {
   return (
     <>
         <section id="heroSection">
+            {/* "div", "span", "p" and "h" ("h1", "h2", "h3") elements (Lecture 2.1, P1) */}
             <div className="appNameAndDescription">                
                 <h1 className="appName">Circular Search</h1>
                 
@@ -151,4 +141,5 @@ function Home() {
     </>
 )}
 
+// default exports (3.1, P3)
 export default Home

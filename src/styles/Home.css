@@ -1,0 +1,517 @@
+:root {
+  --jolly-rancher-green: rgb(47,208,6);
+  --reef-green: rgb(75,160,99);
+  --white: rgb(255,255,255);
+  --black: rgb(0,0,0);
+  --gray: rgb(75,75,75);
+  --light-gray: rgb(249, 250, 251);
+  --solitude-gray: rgb(243,244,246);
+  --clear-current-green: rgba(14,148,83,0.2);
+  --current-green: rgb(14.148,83);
+  --bright-gray: rgb(229,231,235);
+  --lime-green: rgb(177,249,21);
+  --cloudy-gray: rgb(107,114,128);
+  --dark-jolly-rancher-green: rgba(47,208,6,1.5);
+}
+
+/* --------------------- Hero Section --------------------- */
+.appNameAndDescription {
+    width: 100%;
+    /* box model - margin, border, padding (Lecture 1.2, P1) */
+	margin: 0 auto;
+	padding: 0 2rem 1.5rem 2rem;
+    position: relative;
+    text-align: center;
+}
+
+.appName {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    margin: 0 0 1.5rem 0;
+    color: var(--jolly-rancher-green);
+}
+
+.appDescription {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: var(--jolly-rancher-green);
+    margin: 0 0 3rem 0;
+}
+
+/* --------------------- Features Section --------------------- */
+/* features section */
+#featuresSection {
+    width: 100%;
+    padding: 0 1rem 1.5rem 1rem;
+    margin: 0 auto;
+}
+
+/* div wrapped around secondary headline and description */
+.secondaryHeadlineAndDescription {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.secondaryHeadlineAndDescription h2 {
+    font-size: 1.875rem;
+	line-height: 2.25rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+}
+
+.secondaryHeadlineAndDescription p {
+    font-size: 1.125rem;
+	line-height: 1.75rem;
+    font-weight: 700;
+    margin: 0 auto;
+    color: var(--reef-green);
+}
+
+.secondaryHeadlineAndDescription a {
+    color: var(--white);
+}
+
+.secondaryHeadlineAndDescription a:hover {
+    color: var(--jolly-green);
+}
+
+/* div wrapped around feature box */
+.featureBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* divide the feature box, 2 x 2 */
+.featureBox div {
+    flex: 1 0 40%;
+    background-color: var(--white);
+    border-radius: .75rem;
+    padding: 1.0rem;
+}
+
+/* spacing within the feature box */
+.featureBox div:nth-child(1), .featureBox div:nth-child(3) {
+    margin-right: 0.5rem;
+}
+
+.featureBox div:nth-child(1), .featureBox div:nth-child(2) {
+    margin-bottom: 0.5rem;
+}
+
+/* feature icons */
+.lucide-arrow-up, .lucide-search, .lucide-percent, .lucide-funnel {
+    color: var(--jolly-rancher-green);
+    background-color: var(--clear-current-green);
+    height: 2rem;
+    width: 2rem;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+}
+
+/* feature titles */
+.featureBox div h3 {
+    background-color: var(--white);
+    color: var(--black);
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* feature descriptions */
+.featureBox div p {
+    background-color: var(--white);
+    color: var(--gray);
+}
+
+/* --------------------- Search Checklist Section --------------------- */
+/* checklist section */
+#searchChecklistSection {
+    background: transparent;
+    text-align: center;
+    margin: 0 auto 2.5rem auto;
+    width: 100%;
+	padding: 0 1rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* checklist header */
+#searchChecklistSection h2 {
+    font-weight: 700;
+    font-size: 1.875rem;
+	line-height: 2.25rem;
+}
+
+/* checklist description */
+#searchChecklistSection p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    margin: 0 auto;
+    color: var(--reef-green);
+}
+
+/* unordered-list */
+#searchChecklistSection ul {
+    margin: 0 0 2rem 0;
+}
+
+#searchChecklistSection ul li {
+    display: flex;
+    align-items: flex-start;
+    margin: 0.5rem 0;
+}
+
+/* checkmarks */
+#searchChecklistSection ul li div {
+    border-radius: 1rem;
+    background-color: var(--clear-current-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: .125rem 0.75rem 0 0;
+}
+
+#searchChecklistSection ul li div span {
+    background: transparent;
+    font-weight: 500;
+    color: var(--reef-green);
+    font-size: .875rem;
+	line-height: 1.25rem;
+}
+
+/* list items */
+#searchChecklistSection ul li span {
+    color: var(--reef-green);
+}
+
+/* "Try Uploading Now" button */
+#searchChecklistSection button {
+    color: var(--white);
+    background-color: var(--jolly-rancher-green);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    font-size: 100%;
+    height: 2.5rem;
+}
+
+#searchChecklistSection button:hover {
+    color: var(--black);
+    background-color: var(--current-green);
+}
+
+/* --------------------- Search Mockup Section --------------------- */
+#searchMockupSection {
+    background-color: var(--white);
+    overflow: hidden;
+    border-radius: 0.75rem;
+    height: 12rem;
+}
+
+/* --------------------- Upload Checklist Section --------------------- */
+/* checklist section */
+#uploadChecklistSection {
+    background: transparent;
+    text-align: center;
+    margin: 0 auto 2.5rem auto;
+    width: 100%;
+	padding: 0 1rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* checklist header */
+#uploadChecklistSection h2 {
+    font-weight: 700;
+    font-size: 1.875rem;
+	line-height: 2.25rem;
+}
+
+/* checklist description */
+#uploadChecklistSection p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    margin: 0 auto;
+    color: var(--reef-green);
+}
+
+/* unordered-list */
+#uploadChecklistSection ul {
+    margin: 0 0 2rem 0;
+}
+
+#uploadChecklistSection ul li {
+    display: flex;
+    align-items: flex-start;
+    margin: 0.5rem 0;
+}
+
+/* checkmarks */
+#uploadChecklistSection ul li div {
+    border-radius: 1rem;
+    background-color: var(--clear-current-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: .125rem 0.75rem 0 0;
+}
+
+#uploadChecklistSection ul li div span {
+    background: transparent;
+    font-weight: 500;
+    color: var(--reef-green);
+    font-size: .875rem;
+	line-height: 1.25rem;
+}
+
+/* list items */
+#uploadChecklistSection ul li span {
+    color: var(--reef-green);
+}
+
+/* "Try Uploading Now" button */
+#uploadChecklistSection button {
+    color: var(--white);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--jolly-rancher-green);
+    border-radius: 0.5rem;
+    font-weight: 500;
+    height: 2.5rem;
+}
+
+#uploadChecklistSection button:hover {
+    color: var(--black);
+    background-color: var(--current-green);
+}
+
+/* --------------------- Upload Mockup Section --------------------- */
+#uploadMockupSection {
+    background-color: var(--white);
+    border-radius: .75rem;
+    overflow: hidden;
+    border: 1px solid var(--white);
+    height: 12rem;
+}
+
+/* div wrapped around upload mockup's header */
+.uploadMockupHeader {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--white);
+    padding: 1.5rem;
+}
+
+/* upload demo's header */
+#uploadMockupSection div:nth-child(1) h3 {
+    background-color: var(--white);
+    color: var(--black);
+    font-size: 1.125rem;
+    font-weight: 600;
+	line-height: 1.75rem;
+}
+
+/* --------------------- Pricing Plans Section --------------------- */
+#pricingSection {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* div wrapped around price header and description */
+.pricingHeaderDiv {
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+
+/* pricing header */
+.pricingHeaderDiv h2 {
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    margin: 0 0 1rem 0;
+}
+
+/* pricing description */
+.pricingHeaderDiv p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    margin: 0 auto;
+    color: var(--reef-green);
+}
+
+/* div wrapped around pricing cards */
+.pricingCardDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* spacing between the pricing cards */
+.pricingCardDiv div:nth-child(1) {
+    margin-right: 1rem;
+}
+
+/* div wrapped around each individual pricing card */
+.individualPricingCard {
+    background-color: var(--white);
+    padding: 2rem;
+}
+
+/* pricing cards */
+.pricingCard {
+    background-color: var(--white);
+    overflow: hidden;
+    position: relative;
+    border-width: 2px;
+    border-radius: 0.75rem;
+}
+
+/* border colors for popular and non-popular pricing plan */
+.greenBorder {
+    border: 3px solid var(--jolly-rancher-green);
+}
+
+.grayBorder {
+    border: 3px solid var(--bright-gray);
+}
+
+.grayBorder button {
+    margin: 4.25rem 0 0 0;
+}
+
+/* "Most Popular" banner */
+.mostPopular {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--jolly-rancher-green);
+    border-bottom-left-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+    font-weight: 500;
+    font-size: 0.875rem;
+	line-height: 1.25rem;
+    padding: 0.25rem 1rem;
+}
+
+/* pricing plan name */
+.individualPricingCard h3 {
+    background-color: var(--white);
+    color: var(--black);
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+	line-height: 1.75rem;
+}
+
+/* div wrapped around pricing plan prices */
+.individualPrice {
+    background-color: var(--white);
+    display: flex;
+    align-items: baseline;
+    margin: 0 0 1rem 0;
+}
+
+/* pricing plan prices */
+.individualPrice span {
+    background-color: var(--white);
+    color: var(--black);
+    font-weight: 700;
+    font-size: 2.25rem;
+	line-height: 2.5rem;
+}
+
+/* pricing plan frequency */
+.individualPrice span:nth-child(2) {
+    background-color: var(--white);
+    color: var(--cloudy-gray);
+    margin: 0 0 0 0.5rem;
+}
+
+/* pricing plan description */
+.individualPricingCard p {
+    background-color: var(--white);
+    margin: 0 0 1.5rem 0;
+    color: var(--gray);
+}
+
+/* pricing plan feature unordered list */
+.individualPricingCard ul {
+    background-color: var(--white);
+    margin: 2rem 0;
+    padding: 0;
+}
+
+/* pricing plan feature list items */
+.individualPricingCard ul li {
+    background-color: var(--white);
+    display: flex;
+    align-items: flex-start;
+    padding: 0 0 0.75rem 0;
+}
+
+/* div wrapped around feature checkmarks */
+.individualPricingCard ul li div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 1.25rem;
+    width: 1.25rem;
+    margin: 0.125rem 0.75rem 0 0;
+    border-radius: 1rem;
+    background-color: var(--clear-current-green);
+}
+
+/* pricing plan feature checkmarks */
+.individualPricingCard ul li div span {
+    background: transparent;
+    color: var(--jolly-rancher-green);
+    font-size: .75rem;
+	line-height: 1rem;
+}
+
+/* pricing plan features */
+.individualPricingCard ul li span {
+    background-color: var(--white);
+    font-size: 0.875rem;
+	line-height: 1.25rem;
+    color: var(--cloudy-gray);
+}
+
+/* pricing plan button */
+.individualPricingCard button {
+    background-color: var(--jolly-rancher-green);
+    padding: 0 1.5rem;
+    font-weight: 500;
+    border-radius: 0.75rem;
+    font-size: 1.125rem;
+	line-height: 1.75rem;
+    height: 3rem;
+    width: 100%;
+}
+
+.finePrint {
+    text-align: center;
+    margin: 3rem 0 0 0;
+    font-size: 0.875rem;
+	line-height: 1.25rem;
+    color: var(--cloudy-gray);
+}

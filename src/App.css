@@ -1,13 +1,13 @@
 /* The Overlay (background) */
 .overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  /* height and weight properties (Lecture 1.2, P1)*/
   height: 100%;
   width: 0;
   position: fixed;
   z-index: 1;
   left: 0;
   top: 0;
-  background-color: var(--dark-cyan-opaque); /* Black w/opacity */
+  background-color: var(--dark-cyan-opaque);
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }

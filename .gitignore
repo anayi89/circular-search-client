@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+components/Authenticate.jsx
+components/Contact.jsx
+components/Search.jsx
+components/Upload.jsx
+components/ViewAll.jsx
+components/ViewMy.jsx
+styles/design.css
