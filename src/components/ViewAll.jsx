@@ -6,4 +6,4 @@ function ViewAll() {
     )
 }
 
-export default ViewAll;
+export default ViewAll

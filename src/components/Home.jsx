@@ -1,16 +1,16 @@
 // external stylesheets (Lecture 3.4, P1)
 import "../styles/Home.css"
-import features from "../data/features"
-import plans from "../data/plans"
 
 // component imports (Lecture 3.1, P3)
+import features from "../data/features"
+import plans from "../data/plans"
 import dummyTextStrings from "../data/dummyTextStrings"
 import uploadChecklist from "../data/uploadChecklist"
 import searchChecklist from "../data/searchChecklist"
 import { Link } from "react-router-dom"
-import { useState } from "react"
 
 function Home() {
+    // function parameters (Lecture 2.7, P2)
     const dummyText = (n) => {
         let result = ''
         for (let i = 0; i <= n; i++) {
