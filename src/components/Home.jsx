@@ -1,8 +1,4 @@
 // external stylesheets (Lecture 3.4, P1)
-import "../styles/HomeHero.css"
-import "../styles/HomeFeatures.css"
-import "../styles/HomeSearchChecklist.css"
-import "../styles/HomeSearchMockup.css"
 import "../styles/Home.css"
 import features from "../data/features"
 import plans from "../data/plans"
