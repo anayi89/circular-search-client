@@ -1,0 +1,92 @@
+:root {
+  --jolly-rancher-green: rgb(47,208,6);
+  --reef-green: rgb(75,160,99);
+  --white: rgb(255,255,255);
+  --black: rgb(0,0,0);
+  --gray: rgb(75,75,75);
+  --clear-current-green: rgba(14,148,83,0.2);
+}
+
+/* features section */
+#featuresSection {
+    width: 100%;
+    padding: 0 1rem 1.5rem 1rem;
+    margin: 0 auto;
+}
+
+/* div wrapped around secondary headline and description */
+.secondaryHeadlineAndDescription {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.secondaryHeadlineAndDescription h2 {
+    font-size: 1.875rem;
+	line-height: 2.25rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+}
+
+.secondaryHeadlineAndDescription p {
+    font-size: 1.125rem;
+	line-height: 1.75rem;
+    font-weight: 700;
+    margin: 0 auto;
+    color: var(--reef-green);
+}
+
+.secondaryHeadlineAndDescription a {
+    color: var(--white);
+}
+
+.secondaryHeadlineAndDescription a:hover {
+    color: var(--jolly-green);
+}
+
+/* div wrapped around feature box */
+.featureBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* divide the feature box, 2 x 2 */
+.featureBox div {
+    flex: 1 0 40%;
+    background-color: var(--white);
+    border-radius: .75rem;
+    padding: 1.0rem;
+}
+
+/* spacing within the feature box */
+.featureBox div:nth-child(1), .featureBox div:nth-child(3) {
+    margin-right: 0.5rem;
+}
+
+.featureBox div:nth-child(1), .featureBox div:nth-child(2) {
+    margin-bottom: 0.5rem;
+}
+
+/* feature icons */
+.lucide-arrow-up, .lucide-search, .lucide-percent, .lucide-funnel {
+    color: var(--jolly-rancher-green);
+    background-color: var(--clear-current-green);
+    height: 2rem;
+    width: 2rem;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+}
+
+/* feature titles */
+.featureBox div h3 {
+    background-color: var(--white);
+    color: var(--black);
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* feature descriptions */
+.featureBox div p {
+    background-color: var(--white);
+    color: var(--gray);
+}

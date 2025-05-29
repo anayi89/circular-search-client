@@ -1,0 +1,30 @@
+:root {
+  --jolly-green: rgb(47,208,6);
+  --reef-green: rgb(75,160,99);
+}
+
+.appNameAndDescription {
+    padding-bottom: 1.5rem;
+    width: 100%;
+	margin: 0 auto;
+	padding: 0 2rem;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.appName {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    margin: 0 0 1.5rem 0;
+    color: var(--jolly-green);
+}
+
+.appDescription {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: var(--jolly-green);
+    margin: 0 0 3rem 0;
+}

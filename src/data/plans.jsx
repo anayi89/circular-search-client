@@ -1,29 +1,38 @@
+import dummyTextStrings from "../data/dummyTextStrings"
+
+const dummyText = (n) => {
+    let result = ''
+    for (let i = 0; i <= n; i++) {
+        result = result.concat(dummyTextStrings[Math.floor(Math.random() * dummyTextStrings.length)], ' ')
+    }
+    return result.charAt(0).toUpperCase() + result.slice(1).slice(0,-1).concat(".")
+}
+
 const plans = [
     {
         name: "Free",
         price: "0",
-        description: "Perfect for casual shoppers looking to save on groceries",
+        description: "For the cheaper option",
         features: [
-            "Upload up to 5 circulars per month",
-            "Basic search functionality",
-            "Sort by discount",
-            "Access to your own uploaded circulars"
+            dummyText(5),
+            dummyText(5),
+            dummyText(5),
+            dummyText(5),
+            dummyText(5)
         ],
         buttonText: "Get Started",
-        buttonVariant: "secondary",
         popular: false
     },
     {
         name: "Premium",
         price: "4.99",
-        description: "Ideal for families looking to maximize grocery savings",
+        description: "To make the most your Circular Search experience",
         features: [
-            "Unlimited circular uploads",
-            "Advanced search across all stores",
-            "Access to all user-uploaded circulars",
-            "Price history and tracking",
-            "Deal alerts for favorite items",
-            "Export shopping lists"
+            dummyText(5),
+            dummyText(5),
+            dummyText(5),
+            dummyText(5),
+            dummyText(5)
         ],
         buttonText: "Start Free Trial",
         buttonVariant: "primary",

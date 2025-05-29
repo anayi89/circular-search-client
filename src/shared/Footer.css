@@ -1,0 +1,80 @@
+:root {
+  --jolly-green: rgb(47,208,6);
+  --reef-green: rgb(75,160,99);
+  --white: rgb(255,255,255);
+  --black: rgb(0,0,0);
+}
+
+/* div wrapped around footer box and copyright section */
+#footerSection {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+}
+
+/* div wrapped around the 3 columns */
+#footerSection div:nth-child(1) {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+/* 3 columns in the footer */
+#footerSection div div {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* horizontal lines between the 3 columns */
+#footerSection div div:nth-child(1), #footerSection div div:nth-child(2) {
+    border-right: 1px solid var(--black);
+}
+
+/* footer headers */
+#footerSection div div h3 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--white);
+    margin: 0 auto;
+}
+
+/* text in the 3 columns */
+#footerSection div div:nth-child(1) p {
+    font-size: .875rem;
+}
+
+/* remove bullet points from the links */
+#footerSection div ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* footer links in the 2nd and 3rd column */
+#footerSection div ul li a, .fa-facebook, .fa-linkedin, .fa-instagram {
+    color: var(--white);
+}
+
+#footerSection div ul li a:hover, .fa-facebook:hover, .fa-linkedin:hover, .fa-instagram:hover {
+    color: var(--jolly-green);
+}
+
+#footerSection div div button {
+    background-color: transparent;
+    width: 2.5rem;
+}
+
+/* copyright section */
+.footerBottom {
+    border-top: 1px solid var(--black);
+    margin: 1rem 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footerBottom p {
+    font-size: .875rem;
+    margin: 1rem 0 0 0;
+    color: var(--reef-green);
+}

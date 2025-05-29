@@ -1,0 +1,206 @@
+:root {
+  --jolly-green: rgb(47,208,6);
+  --reef-green: rgb(75,160,99);
+  --white: rgb(255,255,255);
+  --black: rgb(0,0,0);
+  --gray: rgb(75,75,75);
+  --light-gray: rgb(249, 250, 251);
+  --solitude-blue: rgb(243,244,246);
+  --clear-current-green: rgba(14,148,83,0.2);
+  --bright-gray: rgb(229,231,235);
+  --lime-green: rgb(177,249,21);
+  --cloudy-gray: rgb(107,114,128)
+}
+
+#searchMockupSection {
+    background-color: var(--white);
+    overflow: hidden;
+    border-radius: 0.75rem;
+    height: 12rem;
+}
+
+/* div wrapped around search bar */
+.searchBarDiv {
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    border: 0 0 0.5rem 0;
+    padding: 1rem;
+}
+
+/* magnifying glass icon */
+.search-button {
+    background-color: var(--white);
+    height: 2rem;
+    width: 2rem;
+    color: var(--gray);
+    margin: 0 0.5rem 0 0;
+}
+
+/* search bar */
+#searchMockupSection input[type="text"] {
+    font-size: 100%;;
+    background: transparent;
+    border-width: 0;
+    flex: 1 1 0%;
+}
+
+/* disable the search bar */
+#searchMockupSection input[type="text"]:disabled {
+    cursor: default;
+}
+
+/* filter bar */
+.filterBarDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--light-gray);
+    border-bottom: 1px solid var(--solitude-blue);
+    padding: 1rem;
+    font-size: .875rem;
+	line-height: 1.25rem;
+}
+
+.filterBarDiv div {
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+}
+
+/* "Filter:" and "Sort by:" texts */
+.filterBarDiv span:nth-child(1) {
+    background-color: var(--white);
+    margin: 0 0.5rem 0 0;
+    color: var(--gray);
+}
+
+/* clicked filter */
+.clickedFilter {
+    color: var(--jolly-green);
+    background-color: var(--clear-current-green);
+    border-radius: 1rem;
+    padding: 0.25rem 0.75rem;
+}
+
+/* unclicked filter */
+.unclickedFilter {
+    color: var(--black);
+    background-color: var(--bright-gray);
+    border-radius: 1rem;
+    padding: 0.25rem 0.75rem;
+}
+
+/* "Discount" button */
+#searchMockupSection button {
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: var(--jolly-green);
+}
+
+#searchMockupSection button svg {
+    background: transparent;
+    height: 1rem;
+    width: 1rem;
+    margin: 0 0 0 0.25rem;
+}
+
+/* search result box */
+.unfilteredResult {
+    background-color: var(--white);
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.filteredResult {
+    display: none;
+}
+
+.itemResultsDiv div:hover {
+    background-color: var(--light-gray);
+}
+
+.itemImage, .itemImage img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 0.25rem;
+    margin: 0 1rem 0 0;
+}
+
+/* div wrapped around item names and prices */
+.itemNameAndPrices {
+    background-color: var(--white);
+    flex: 1 1 0%;
+}
+
+/* item name */
+.itemName {
+    background-color: var(--white);
+    color: var(--black);
+    font-weight: 500;
+}
+
+/* div wrapped around item prices */
+.itemPricesDiv {
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+	line-height: 1.25rem;
+    margin: 0.25rem 0 0 0;
+}
+
+/* item original prices */
+.itemOriginalPrice {
+    background-color: var(--white);
+    margin: 0 0.5rem 0 0;
+    color: var(--cloudy-gray);
+    text-decoration-line: line-through;
+}
+
+/* item current prices */
+.itemCurrentPrice {
+    background-color: var(--white);
+    font-weight: 700;
+    color: var(--jolly-green)
+}
+
+/* item discount percentage */
+.itemDiscount {
+    background-color: var(--white);
+    font-weight: 500;
+    font-size: 0.75rem;
+	line-height: 1rem;
+    border-radius: 1rem;
+    padding: 0.125rem 0.5rem;
+    margin: 0 0 0 0.5rem;
+    color: var(--lime-green);
+}
+
+/* store name */
+.storeName {
+    background-color: var(--white);
+    font-size: 0.75rem;
+	line-height: 1rem;
+    text-align: right;
+    color: var(--gray);
+}
+
+/* div wrapped around "View more results" button */
+.moreResultsDiv {
+    padding: 1rem;
+    background-color: var(--light-gray);
+    text-align: center;
+    border-top: 1px solid var(--solitude-blue);
+}
+
+/* "View more results" button */
+.moreResultsDiv button {
+    color: var(--jolly-green);
+    font-size: .875rem;
+	line-height: 1.25rem;
+    font-weight: 500;
+}

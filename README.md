@@ -1,12 +1,28 @@
-# React + Vite
+# Circular Search
+Circular Search that is built on MERN (MongoDB, ExpressJS, ReactJS, NodeJS). This web application allows users to upload weekly circulars from their local supermarkets and finding the best deals by making data from the circulars searchable.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Developer
+- [Iyana Garry](https://www.linkedin.com/in/iyanagarry)
 
-Currently, two official plugins are available:
+## Contributors
+- Bridgette Cloud
+- Danielle Petrides
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Badges
+![GitHub language count](https://img.shields.io/github/languages/count/:user/:repo)
+![GitHub file size in bytes](https://img.shields.io/github/size/:user/:repo/:path)
+![GitHub User's stars](https://img.shields.io/github/stars/:user)
 
-## Expanding the ESLint configuration
+## Installation Instructions
+To run this web application locally, do the following:
+```bash
+  git clone https://github.com/anayi89/circular-search-client.git
+  cd /circular-search-client
+  npm run deploy
+```
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Usage Details
+Navigate to the homepage in the browser.
+To login/sign up, navigate to /sign_up_login.
+To upload weekly circulars, navigate to /upload.
+To search weekly circulars, navigate to /search.

@@ -1,25 +1,34 @@
 import { Percent, Search, ArrowUp, Filter } from 'lucide-react'
+import dummyTextStrings from "../data/dummyTextStrings"
+
+const dummyText = (n) => {
+    let result = ''
+    for (let i = 0; i <= n; i++) {
+        result = result.concat(dummyTextStrings[Math.floor(Math.random() * dummyTextStrings.length)], ' ')
+    }
+    return result.charAt(0).toUpperCase() + result.slice(1).slice(0,-1).concat(".")
+}
 
 const features = [
     {
-        title: "Upload Weekly Circulars",
-        description: "Easily upload and digitize supermarket circulars to make them searchable and shareable.",
-        icon: <ArrowUp className="h-10 w-10 p-2 bg-primary/10 text-primary rounded-lg" />,
+        title: "Upload weekly circulars from your local market",
+        description: dummyText(10),
+        icon: <ArrowUp />,
     },
     {
-        title: "Search Across Stores",
-        description: "Find specific grocery items across multiple stores to compare prices and find the best deals.",
-        icon: <Search className="h-10 w-10 p-2 bg-primary/10 text-primary rounded-lg" />,
+        title: "Access Weekly Circulars from Mulktiple Stores at the Same Time",
+        description: dummyText(10),
+        icon: <Search />,
     },
     {
-        title: "Sort by Biggest Discounts",
-        description: "Never miss a bargain with our advanced sorting system that highlights the best deals first.",
-        icon: <Percent className="h-10 w-10 p-2 bg-primary/10 text-primary rounded-lg" />,
+        title: "Find Grocery Items with the Best Deals by Sorting Searxch Results by Discount",
+        description: dummyText(10),
+        icon: <Percent />,
     },
     {
-        title: "Filter Results",
-        description: "Narrow down your search with filters for product categories, stores, and price ranges.",
-        icon: <Filter className="h-10 w-10 p-2 bg-primary/10 text-primary rounded-lg" />,
+        title: "Filter Your Search Results to Make the Best Purchasing Decisions",
+        description: dummyText(10),
+        icon: <Filter />,
     }
 ]
 

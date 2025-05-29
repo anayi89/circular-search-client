@@ -1,9 +1,28 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+  --dark-cyan: rgb(8,86,48);
+  --dark-cyan-opaque: rgba(8,86,48, 0.8);
+  --current-green: rgb(14,148,83);
+  --jolly-green: rgb(47,208,6);
+  --reef-green: rgb(75,160,99);
+  --white: rgb(255,255,255);
+  --main-link-color: rgb(0,123,255);
+  --cobalt: rgb(0,86,179);
+  --ghost-white: rgb(248,249,250);
+  --black: rgb(0,0,0);
+  --main-border-radius: 0.25rem;
+  --main-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --main-transition: all 0.3s ease;
+}
+
+* {
+  background-color: var(--dark-cyan);
+  box-sizing: border-box;
+  border-width: 0;
+  /* font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji"; */
+}
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif, inherit; */
   line-height: 1.5;
   font-weight: 400;
 
@@ -33,6 +52,7 @@ body {
   place-items: center; */
   min-width: 320px;
   min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {

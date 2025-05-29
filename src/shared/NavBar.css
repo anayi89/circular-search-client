@@ -1,18 +1,15 @@
 :root {
     --dark-cyan: rgb(8,86,48);
     --dark-cyan-opaque: rgba(8,86,48, 0.8);
+    --white: rgb(255,255,255);
+    --jolly-green: rgb(47,208,6);
   }
 
+  /* nav menu section */
 .nav_menu {
     position: relative;
     background-color: var(--dark-cyan);
-    color: white;
-}
-
-.hamburger {
-    cursor: pointer;
-    background: none;
-    border: none;
+    color: var(--white);
 }
 
 .overlay {
@@ -27,21 +24,36 @@
     z-index: 1000;
 }
 
-.overlay.open {
+/* nav menu icon */
+.hamburger {
+    background: none;
+    border: none;
+}
+
+/* nav menu when the icon is clicked */
+.open {
     width: 100%;
 }
 
+/* links in the nav menu */
 .overlay-content {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
+.overlay-content a {
+    color: var(--white);
+}
+
+.overlay-content a:hover {
+    color: var(--jolly-green);
+}
+
 .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
-    font-size: 60px;
-    color: white;
-    cursor: pointer;
+    font-size: 1.25rem;
+    color: var(--white);
 }

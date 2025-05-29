@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { ArrowUp, Check, Upload as UploadIcon } from 'lucide-react'
+import "../styles/design.css"
 
 const Upload = () => {
   const [dragActive, setDragActive] = useState(false);
@@ -94,10 +95,10 @@ const Upload = () => {
   
   return (
     <div className="min-h-screen flex flex-col justify-center">
-      <div className="flex-grow py-16 bg-gray-50">
+      <div className="flex-grow">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl font-bold mb-6">Upload Weekly Circulars</h1>
+            <h1 className="text-4xl font-bold mb-6">Upload a Circular</h1>
             <p className="text-lg text-green mb-8">
               Upload your local supermarket circulars to extract deals automatically and make them searchable. Our system will process your files and extract all the best deals.
             </p>
@@ -187,28 +188,6 @@ const Upload = () => {
                   </button>
                 </div>
               </div>
-            </div>
-            
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h2 className="bg-white search-result-text text-2xl font-bold mb-4">How It Works</h2>
-              <ol className="bg-white space-y-4 list-decimal list-inside">
-                <li className="bg-white ml-4">
-                  <span className="bg-white search-result-text font-medium">Upload your circular</span>
-                  <p className="bg-white text-gray-600 ml-6 mt-1">Take a photo or scan of your local supermarket circular and upload it.</p>
-                </li>
-                <li className="bg-white ml-4">
-                  <span className="bg-white search-result-text font-medium">Automatic processing</span>
-                  <p className="bg-white text-gray-600 ml-6 mt-1">Our system automatically extracts all deals using advanced image recognition.</p>
-                </li>
-                <li className="bg-white ml-4">
-                  <span className="bg-white search-result-text font-medium">Search and compare</span>
-                  <p className="bg-white text-gray-600 ml-6 mt-1">All deals become instantly searchable and can be compared across stores.</p>
-                </li>
-                <li className="bg-white ml-4">
-                  <span className="bg-white search-result-text font-medium">Save money</span>
-                  <p className="bg-white text-gray-600 ml-6 mt-1">Find the best deals on your grocery shopping with minimal effort.</p>
-                </li>
-              </ol>
             </div>
           </div>
         </div>
