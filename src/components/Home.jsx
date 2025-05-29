@@ -94,12 +94,15 @@ function Home() {
         </section>
 
         <section id="searchMockupSection">
+            <div className="searchMockupHeader">
+                <h3>Search for Items</h3>
+            </div>
         </section>
 
         <section id="pricingSection">
             <div className="pricingHeaderDiv">
-                <h2>Simple, Transparent Pricing</h2>
-                <p>Choose the plan that works best for you and start saving on your grocery shopping today.</p>
+                <h2>Check Out Our Affordable Pricing Plans</h2>
+                <p>Choose the plan that works best for you, so you can start saving on your grocery shopping today!</p>
             </div>
             
             <div className="pricingCardDiv">
@@ -137,5 +140,5 @@ function Home() {
     </>
 )}
 
-// default exports (3.1, P3)
+// default exports (Lecture 3.1, P3)
 export default Home
